@@ -3,7 +3,52 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-09-24T20:11:39.210Z",
+        "line": 3,
+        "name": "Koala Palace Admin Giris",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8790000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici koalapalace admin sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 239000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici kullaniciadi ve sifresini girer",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8270000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici giris islemini gerceklestirir",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-01T20:32:51.278Z",
         "before": [
           {
             "result": {
@@ -15,381 +60,14 @@
             }
           }
         ],
-        "line": 11,
-        "name": "TC07_kullanici amazonda dropdown ve aramakutusu kullanarak arama yapar",
+        "line": 287,
+        "name": "TC26_kullanici hotelreservationlist sayfasinda verileri girerek reservation arar",
         "description": "",
-        "id": "amazonda-urun-arama;tc07-kullanici-amazonda-dropdown-ve-aramakutusu-kullanarak-arama-yapar;test-verileri;2",
+        "id": "koala-palace;tc26-kullanici-hotelreservationlist-sayfasinda-verileri-girerek-reservation-arar",
         "after": [
           {
             "result": {
-              "duration": 487000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 12057000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "kullanici \"http://amazon.com\" sayfasina gider",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"http://amazon.com\"",
-                  "offset": 10
-                }
-              ],
-              "location": "stepdefinitions.EbayStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 518000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "kullanici dropdownda \"Automotive\" secer",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Automotive\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_dropdownda_secer(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3207000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "kullanici aramakutusuna \"phone holder\" yazar ve arar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"phone holder\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_aramakutusuna_yazar_ve_arar(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 203000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "kullanici sonuc sayisini ekrana yazdirir",
-            "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_sonuc_sayisini_ekrana_yazdirir()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@birdenfazlaexample"
-          },
-          {
-            "name": "@amazon"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-24T20:11:55.885Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 12,
-        "name": "TC07_kullanici amazonda dropdown ve aramakutusu kullanarak arama yapar",
-        "description": "",
-        "id": "amazonda-urun-arama;tc07-kullanici-amazonda-dropdown-ve-aramakutusu-kullanarak-arama-yapar;test-verileri;3",
-        "after": [
-          {
-            "result": {
-              "duration": 449000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1268000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "kullanici \"http://amazon.com\" sayfasina gider",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"http://amazon.com\"",
-                  "offset": 10
-                }
-              ],
-              "location": "stepdefinitions.EbayStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 417000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "kullanici dropdownda \"Baby\" secer",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Baby\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_dropdownda_secer(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1844000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "kullanici aramakutusuna \"stroller\" yazar ve arar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"stroller\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_aramakutusuna_yazar_ve_arar(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 117000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "kullanici sonuc sayisini ekrana yazdirir",
-            "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_sonuc_sayisini_ekrana_yazdirir()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@birdenfazlaexample"
-          },
-          {
-            "name": "@amazon"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-24T20:11:59.994Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 13,
-        "name": "TC07_kullanici amazonda dropdown ve aramakutusu kullanarak arama yapar",
-        "description": "",
-        "id": "amazonda-urun-arama;tc07-kullanici-amazonda-dropdown-ve-aramakutusu-kullanarak-arama-yapar;test-verileri;4",
-        "after": [
-          {
-            "result": {
-              "duration": 345000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1828000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "kullanici \"http://amazon.com\" sayfasina gider",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"http://amazon.com\"",
-                  "offset": 10
-                }
-              ],
-              "location": "stepdefinitions.EbayStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 183000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "kullanici dropdownda \"Books\" secer",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Books\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_dropdownda_secer(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1726000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "kullanici aramakutusuna \"Miserables\" yazar ve arar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Miserables\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_aramakutusuna_yazar_ve_arar(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 188000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "kullanici sonuc sayisini ekrana yazdirir",
-            "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_sonuc_sayisini_ekrana_yazdirir()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@birdenfazlaexample"
-          },
-          {
-            "name": "@amazon"
-          }
-        ]
-      }
-    ],
-    "name": "Amazonda Urun Arama",
-    "description": "",
-    "id": "amazonda-urun-arama",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/amazonexamples.feature",
-    "tags": [
-      {
-        "name": "@birdenfazlaexample",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      },
-      {
-        "name": "@amazon",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 21
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "line": 4,
-        "name": "Oncesinde Calisacak Method (BeforeClass)",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1204000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "kullanici amazon sayfasina gider",
-            "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_amazon_sayfasina_gider()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-24T20:12:04.273Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 8,
-        "name": "TC02_kullanici amazonda arama yapar",
-        "description": "",
-        "id": "amazon-arama;tc02-kullanici-amazonda-arama-yapar",
-        "after": [
-          {
-            "result": {
-              "duration": 368000000,
+              "duration": 322000000,
               "status": "passed"
             },
             "match": {
@@ -402,162 +80,81 @@
         "steps": [
           {
             "result": {
-              "duration": 2252000000,
+              "duration": 1327000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "kullanici aramakutusuna headphones yazar va arar",
+            "line": 288,
+            "name": "kullanici hotelroomreservationlist sayfasina gider",
             "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_aramakutusuna_headphones_yazar_va_arar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 84000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "kullanici sonuc sayisini ekrana yazdirir",
-            "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_sonuc_sayisini_ekrana_yazdirir()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@urunarama"
-          },
-          {
-            "name": "@amazon"
-          }
-        ]
-      }
-    ],
-    "name": "Amazon Arama",
-    "description": "",
-    "id": "amazon-arama",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/amazonsearch.feature",
-    "tags": [
-      {
-        "name": "@urunarama",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2020-09-24T20:12:08.195Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 3,
-        "name": "TC04_kullanici amazonda urun aramasi yapar",
-        "description": "",
-        "id": "amazon-urun-arama;tc04-kullanici-amazonda-urun-aramasi-yapar",
-        "after": [
-          {
-            "result": {
-              "duration": 474000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1228000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "kullanici amazon sayfasina gider",
-            "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_amazon_sayfasina_gider()"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservationlist_sayfasina_gider()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2217000000,
+              "duration": 200000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "kullanici aramakutusuna \"drone\" yazar ve arar",
+            "line": 289,
+            "name": "kullanici hotelroomreservationlist hotelroomid bolumunde \"team06\" secer",
             "match": {
               "arguments": [
                 {
-                  "val": "\"drone\"",
-                  "offset": 24
+                  "val": "\"team06\"",
+                  "offset": 57
                 }
               ],
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_aramakutusuna_yazar_ve_arar(java.lang.String)"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservationlist_hotelroomid_bolumunde_secer(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 453000000,
+              "duration": 502000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "kullanici sonuc sayisini ekrana yazdirir",
+            "line": 290,
+            "name": "kullanici hotelroomreservationlist arama kutusuna tiklar",
             "match": {
-              "location": "stepdefinitions.AmazonStepDefinitions.kullanici_sonuc_sayisini_ekrana_yazdirir()"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservationlist_arama_kutusuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5427000000,
+              "status": "passed"
+            },
+            "line": 291,
+            "name": "kullanici hotelroomreservationlist kayitlarini inceler",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservationlist_kayitlarini_inceler()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@urunarama1"
+            "name": "@koalapalace"
           },
           {
-            "name": "@amazon"
+            "name": "@hotelreservationsearch"
           }
         ]
       }
     ],
-    "name": "Amazon Urun Arama",
+    "name": "Koala Palace",
     "description": "",
-    "id": "amazon-urun-arama",
+    "id": "koala-palace",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/parametre.feature",
+    "uri": "file:src/test/resources/features/koalapalace.feature",
     "tags": [
       {
-        "name": "@urunarama1",
+        "name": "@koalapalace",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
-        }
-      },
-      {
-        "name": "@amazon",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 13
         }
       }
     ]
