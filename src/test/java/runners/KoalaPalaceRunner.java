@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@hotelreservationsearch", // {"@tag1", "@tag2", "@tag3"} veya {"@tag1" or "@tag2" or "@tag3"}
+        tags = "@hotelroomedit", // {"@tag1", "@tag2", "@tag3"} veya {"@tag1" or "@tag2" or "@tag3"}
         dryRun = false
 )
 
