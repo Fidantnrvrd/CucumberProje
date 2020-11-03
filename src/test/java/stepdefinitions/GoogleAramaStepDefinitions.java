@@ -12,14 +12,12 @@ public class GoogleAramaStepDefinitions {
     GooglePage googlePage = new GooglePage();
 
 
-    @Given("kullanici google sayfasina gider")
     public void kullanici_google_sayfasina_gider() {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("google_link"));
         // bu bize .properties dosyasinin icerisindeki googlr linkini getirecek.
 
     }
-    @Given("techproeducation aramasi yapar")
     public void techproeducation_aramasi_yapar() {
         googlePage.aramaKutusu.sendKeys(ConfigurationReader.getProperty("google_kelime") + Keys.ENTER);
     }

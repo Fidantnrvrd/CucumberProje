@@ -9,7 +9,6 @@ public class WalmartStepDefinitions {
 
     WalmartPage walmartPage = new WalmartPage();
 
-    @Given("kullanici walmart aramakutusuna {string} yazar ve arar")
     public void kullanici_walmart_aramakutusuna_yazar_ve_arar(String string) {
         walmartPage.aramaKutusu.sendKeys(string+ Keys.ENTER);
     }

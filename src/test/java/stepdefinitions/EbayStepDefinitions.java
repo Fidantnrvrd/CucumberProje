@@ -11,13 +11,11 @@ public class EbayStepDefinitions {
     EbayPage ebayPage = new EbayPage();
 
 
-    @Given("kullanici {string} sayfasina gider")
     public void kullanici_sayfasina_gider(String string) {
         // string => http://ebay.com
         Driver.getDriver().get(string);
     }
 
-    @Given("kullanici arama kutusuna {string} yazar")
     public void kullanici_arama_kutusuna_yazar(String string) {
         ebayPage.aramaKutusu.sendKeys(string + Keys.ENTER);
     }
